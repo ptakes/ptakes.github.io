@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Accolade Login</title>
+  <link href="styles.css" rel="stylesheet"></head>
+
+  <body>
+    <form class="app-Dialog">
+      <div class="app-Dialog-title--lg">Accolade Logon</div>
+      <div class="ms-Dialog-content">
+        <div class="ms-TextField">
+          <label class="ms-Label" for="app-ServerUrl">Accolade Server:</label> <input id="app-ServerUrl" name="app-ServerUrl" class="ms-TextField-field" type="url" disabled />
+        </div>
+        <div class="ms-TextField">
+          <label class="ms-Label is-required" for="app-Username">Username:</label>
+          <input id="app-Username" name="app-Username" class="ms-TextField-field" type="text" data-val="true" data-val-required="The username  is required." />
+          <span class="field-validation-valid" data-valmsg-for="app-Username" data-valmsg-replace="true"></span>
+        </div>
+        <div class="ms-TextField">
+          <label class="ms-Label is-required" for="app-Password">Password:</label>
+          <input id="app-Password" name="app-Password" class="ms-TextField-field" type="password" data-val="true" data-val-required="The password is required." />
+          <span class="field-validation-valid" data-valmsg-for="app-Password" data-valmsg-replace="true"></span>
+        </div>
+      </div>
+      <label id="app-InvalidCredentialsMessage" class="field-validation-error" style="display: none;">Logon failed. Please try again.</label>
+      <div class="ms-Dialog-actions">
+        <button id="app-LogonButton" type="submit" class="ms-Button ms-Dialog-action ms-Button--primary"><span class="ms-Button-label">Logon</span></button>
+        <button id="app-CancelButton" class="ms-Button ms-Dialog-action" formnovalidate><span class="ms-Button-label">Cancel</span></button>
+      </div>
+    </form>
+
+    <div class="ms-Overlay"></div>
+
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/Office.js"></script>
+  <script type="text/javascript" src="bundle-core.js"></script><script type="text/javascript" src="bundle-office.js"></script><script type="text/javascript" src="bundle-office-ui.js"></script><script type="text/javascript" src="accolade-logon-dialog.js"></script></body>
+</html>

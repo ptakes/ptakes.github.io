@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Save to Accolade</title>
+  <link href="styles.css" rel="stylesheet"></head>
+
+  <body>
+    <form class="app-Dialog">
+      <div class="app-Dialog-title--lg">Save to Accolade</div>
+      <div class="ms-Dialog-content">
+        <div class="ms-TextField">
+          <label class="ms-Label is-required" for="app-Author">Author:</label>
+          <input id="app-Author" name="app-Author" class="ms-TextField-field" type="text" data-val="true" data-val-required="The Author name is required." />
+          <span class="field-validation-valid" data-valmsg-for="app-Author" data-valmsg-replace="true"></span>
+        </div>
+        <div class="ms-TextField">
+          <label class="ms-Label" for="app-Comments">Version Comments:</label> <input id="app-Comments" name="app-Comments" class="ms-TextField-field" type="text" />
+        </div>
+        <div class="ms-CheckBox">
+          <input class="ms-CheckBox-input" type="checkbox" tabindex="-1" />
+          <label role="checkbox" class="ms-CheckBox-field" tabindex="0" id="app-Publish" name="app-Publish" aria-checked="true">
+            <span class="ms-Label">Publish this version</span>
+          </label>
+        </div>
+        <div class="ms-TextField">
+          <label class="ms-Label" for="app-StatusNotes">Status Notes:</label> <input id="app-StatusNotes" name="app-StatusNotes" class="ms-TextField-field" type="text" />
+        </div>
+        <div class="ms-CheckBox">
+          <input class="ms-CheckBox-input" type="checkbox" tabindex="-1" />
+          <label role="checkbox" class="ms-CheckBox-field" tabindex="0" id="app-StatusCompleted" name="app-StatusCompleted" aria-checked="false">
+            <span class="ms-Label">Mark as completed</span>
+          </label>
+        </div>
+      </div>
+      <div class="ms-Dialog-actions">
+        <button id="app-SaveButton" type="submit" class="ms-Button ms-Dialog-action ms-Button--primary"><span class="ms-Button-label">Save</span></button>
+        <button id="app-CancelButton" class="ms-Button ms-Dialog-action" formnovalidate><span class="ms-Button-label">Cancel</span></button>
+      </div>
+    </form>
+
+    <div class="ms-Overlay"></div>
+
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/Office.js"></script>
+  <script type="text/javascript" src="bundle-core.js"></script><script type="text/javascript" src="bundle-office.js"></script><script type="text/javascript" src="bundle-office-ui.js"></script><script type="text/javascript" src="accolade-save-dialog.js"></script></body>
+</html>
