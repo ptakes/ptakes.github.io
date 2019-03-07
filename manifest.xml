@@ -15,6 +15,7 @@
   <SupportUrl DefaultValue="http://www.sopheon.com/support" />
 
   <AppDomains>
+    <AppDomain>https://vm-peter1.pdlab.sopheon.com</AppDomain>
     <AppDomain>https://ptakes.github.io</AppDomain>
     <AppDomain>https://login.live.com</AppDomain>
     <AppDomain>https://login.microsoftonline.com</AppDomain>
