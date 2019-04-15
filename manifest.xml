@@ -10,11 +10,12 @@
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Accolade" />
   <Description DefaultValue="Accolade for Office Online"/>
-  <IconUrl DefaultValue="https://ptakes.github.io/images/sopcir16x16.png" />
-  <HighResolutionIconUrl DefaultValue="https://ptakes.github.io/images/sopcir64x64.png"/>
+  <IconUrl DefaultValue="https://localhost:3000/images/sopcir16x16.png" />
+  <HighResolutionIconUrl DefaultValue="https://localhost:3000/images/sopcir64x64.png"/>
   <SupportUrl DefaultValue="http://www.sopheon.com/support" />
 
   <AppDomains>
+    <AppDomain>https://localhost:3000</AppDomain>
     <AppDomain>https://vm-peter1.pdlab.sopheon.com</AppDomain>
     <AppDomain>https://ptakes.github.io</AppDomain>
     <AppDomain>https://login.live.com</AppDomain>
@@ -28,7 +29,7 @@
   </Hosts>
 
   <DefaultSettings>
-    <SourceLocation DefaultValue="https://ptakes.github.io/index.html" />
+    <SourceLocation DefaultValue="https://localhost:3000/index.html" />
   </DefaultSettings>
 
   <Permissions>ReadAllDocument</Permissions>
@@ -305,14 +306,14 @@
 
     <Resources>
       <bt:Images>
-        <bt:Image id="Accolade.tpicon_16x16" DefaultValue="https://ptakes.github.io/images/sopcir16x16.png" />
-        <bt:Image id="Accolade.tpicon_32x32" DefaultValue="https://ptakes.github.io/images/sopcir32x32.png" />
-        <bt:Image id="Accolade.tpicon_80x80" DefaultValue="https://ptakes.github.io/images/sopcir80x80.png" />
+        <bt:Image id="Accolade.tpicon_16x16" DefaultValue="https://localhost:3000/images/sopcir16x16.png" />
+        <bt:Image id="Accolade.tpicon_32x32" DefaultValue="https://localhost:3000/images/sopcir32x32.png" />
+        <bt:Image id="Accolade.tpicon_80x80" DefaultValue="https://localhost:3000/images/sopcir80x80.png" />
       </bt:Images>
       <bt:Urls>
-        <bt:Url id="Accolade.DesktopFunctionFile.Url" DefaultValue="https://ptakes.github.io/function-file.html" />
+        <bt:Url id="Accolade.DesktopFunctionFile.Url" DefaultValue="https://localhost:3000/function-file.html" />
         <bt:Url id="Accolade.GetStarted.LearnMoreUrl" DefaultValue="https://www.sopheon.com" />
-        <bt:Url id="Accolade.PropsPanel.Url" DefaultValue="https://ptakes.github.io/index.html" />
+        <bt:Url id="Accolade.PropsPanel.Url" DefaultValue="https://localhost:3000/index.html" />
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="Accolade.LogonButton.Label" DefaultValue="Login" />
